@@ -1,0 +1,131 @@
+@media (max-width: 84em) {
+  nav {
+    position: relative;
+    width: 80%;
+    top: 10px;
+    margin-bottom: 1.4em;
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: column;
+    right: 95%;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+
+  .hireme {
+    position: relative;
+    left: 40%;
+  }
+
+  .pg-1,
+  .opleiding,
+  .werkervaring,
+  .contactinfo {
+    height: auto;
+  }
+
+  .contactcontainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 72em) {
+  .pg-1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 2em;
+  }
+
+  .profilepic {
+    width: 50%;
+    position: relative;
+    top: 2em;
+    left: 25%;
+    transform: translate(0%, 0%);
+    margin-bottom: 2em;
+  }
+
+  .opleiding,
+  .werk-ervaring {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .opleiding h1 {
+    margin-top: 0.8em;
+    text-align: center;
+    margin-bottom: 0.8em;
+  }
+
+  .studies {
+    margin-bottom: 3em;
+  }
+
+  .werk {
+    width: 100%;
+  }
+
+  .s-l {
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 1.4em;
+  }
+
+  .s-l div {
+    width: 40%;
+  }
+
+  .werkervaring h1 {
+    margin-bottom: 0em;
+  }
+
+  .ervaring {
+    width: 100%;
+  }
+
+  .contactcontainer {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  .contactcontainer div {
+    width: 100%;
+  }
+
+  .contactinfo h1 {
+    padding-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+}
+
+@media (max-width: 50em) {
+  nav {
+    width: 100%;
+    top: 0;
+    border-radius: 0;
+  }
+  .profilepic {
+    width: 75%;
+    left: 12.5%;
+  }
+
+  .languages {
+    left: 3%;
+    right: auto;
+  }
+
+  h1 {
+    font-size: 3.2em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+}

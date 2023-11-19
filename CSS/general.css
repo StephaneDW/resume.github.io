@@ -1,0 +1,473 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-color: #fcf9eb;
+}
+
+.languages {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+.languages a {
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  padding: 0.5em 0.9em;
+  border-radius: 2em;
+  transition: all 0.2s ease;
+  color: #070602;
+}
+
+.languages a:hover {
+  background-color: #00664e;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  width: 50%;
+  height: 50px;
+  background-color: #ff5938;
+  border-radius: 25px;
+  left: 50%;
+  top: 3%;
+  transform: translatex(-50%);
+  z-index: +1;
+  overflow: hidden;
+}
+
+.navi-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.navi-items li {
+  list-style: none;
+  line-height: 50px;
+}
+
+.navi-items li a {
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fcf9eb;
+  background-image: linear-gradient(#00664e 0 0);
+  background-position: 0 100%;
+  background-size: 0% 8px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+
+.navi-items li a:hover,
+.navi-items li a:active {
+  background-position: 100% 100%;
+  background-size: 100% 8px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4.8em;
+  line-height: 1.4em;
+  color: #ff5938;
+  font-family: "Caprasimo", serif;
+}
+
+h2 {
+  font-size: 2.4em;
+  font-weight: 400;
+  color: #070602;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 2.4em;
+  color: #070602;
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 1.6em;
+  color: #070602;
+}
+
+p {
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
+.ondertitel-landingpg {
+  margin-top: 0.4em;
+}
+
+.pg-1 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profilepic {
+  width: 70%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+
+.text-onthaal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: -2;
+}
+
+.text-onthaal p {
+  margin-top: 1.4em;
+  width: 80%;
+}
+
+.scroll {
+  position: absolute;
+  z-index: -1;
+  width: 1.8em;
+  top: 90%;
+  left: 5%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hireme {
+  position: absolute;
+  top: 85%;
+  left: 60%;
+  width: 200px;
+  animation: rotate 10s linear infinite;
+}
+
+.opleiding {
+  height: 100vh;
+  width: 80%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.studies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.s-l h2 {
+  margin-bottom: 1.2em;
+}
+
+.s-l {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4.8em;
+}
+
+.s-l div {
+  width: 40%;
+}
+
+.bar {
+  background-color: #e9e9e9;
+  display: block;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1em;
+  margin-top: 0em;
+}
+
+.bar span {
+  height: 10px;
+  float: left;
+  background-color: #00664e;
+}
+
+.Nederlands {
+  width: 100%;
+  animation: Nederlands 2s;
+}
+.Frans {
+  width: 80%;
+  animation: Frans 2s;
+}
+.Engels {
+  width: 90%;
+  animation: Engels 2s;
+}
+.Duits {
+  width: 50%;
+  animation: Duits 2s;
+}
+.Zweeds {
+  width: 50%;
+  animation: Zweeds 2s;
+}
+
+.vaardigheden .bar span {
+  background-color: #00664e;
+}
+
+.html {
+  width: 90%;
+  animation: html 2s;
+}
+.javascript {
+  width: 60%;
+  animation: javascript 2s;
+}
+.illustrator {
+  width: 90%;
+  animation: illustrator 2s;
+}
+.photoshop {
+  width: 80%;
+  animation: photoshop 2s;
+}
+.Excel {
+  width: 90%;
+  animation: Excel 2s;
+}
+
+@keyframes Nederlands {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes Frans {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes Engels {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes Duits {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes Zweeds {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes illustrator {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes photoshop {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes Excel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.werkervaring {
+  height: 100vh;
+}
+
+.werkervaring h1 {
+  text-align: center;
+  padding-top: 1.4em;
+  margin-bottom: 1.4em;
+}
+
+.werk-ervaring {
+  display: flex;
+  justify-content: space-around;
+}
+
+.werk {
+  width: 40%;
+}
+
+.oblx {
+  display: block;
+  background-image: url(../img/background2.png);
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 0px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.oblx a {
+  display: block;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  color: #0e3386;
+  opacity: 0;
+}
+
+.oblx a:hover {
+  opacity: 1;
+}
+
+.ervaring {
+  width: 50%;
+}
+
+.jobomschrijving {
+  cursor: pointer;
+  padding: 0.5em;
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+.jobomschrijving:hover {
+  background-color: #00664e;
+  color: white;
+}
+
+.ervaringuitleg {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-out;
+}
+
+.ervaringuitleg .open {
+  padding: 0.3em;
+}
+
+.contactinfo {
+  background-color: #ffe549;
+}
+
+.contactinfo h1 {
+  text-align: center;
+  padding-top: 1.4em;
+  margin-bottom: 1em;
+}
+
+.contactcontainer {
+  width: 60%;
+  margin: 0px auto;
+  display: flex;
+}
+
+.contactcontainer div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6em;
+}
+
+.details li {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1.4em;
+}
+
+.details li:last-child {
+  margin-bottom: 0;
+}
+
+.details a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #03071e;
+  transition: all 0.3s ease;
+}
+
+.details a:hover {
+  color: #ff5938;
+}
+
+.icon-contactdetails {
+  height: 2em;
+  margin-right: 3em;
+}
