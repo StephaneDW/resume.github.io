@@ -230,7 +230,7 @@ p {
   animation: Engels 2s;
 }
 .Duits {
-  width: 50%;
+  width: 40%;
   animation: Duits 2s;
 }
 .Zweeds {
@@ -292,7 +292,7 @@ p {
     width: 0%;
   }
   100% {
-    width: 50%;
+    width: 40%;
   }
 }
 @keyframes Zweeds {
