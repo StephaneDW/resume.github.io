@@ -118,6 +118,7 @@ p {
 
 .pg-1 {
   height: 100vh;
+  max-height:1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -172,6 +173,7 @@ p {
 
 .opleiding {
   height: 100vh;
+  max-height:1200px;
   width: 80%;
   margin: 0px auto;
   display: grid;
@@ -344,6 +346,7 @@ p {
 
 .werkervaring {
   height: 100vh;
+  max-height:1200px;
 }
 
 .werkervaring h1 {
