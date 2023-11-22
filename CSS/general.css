@@ -119,12 +119,14 @@ p {
 .pg-1 {
   height: 100vh;
   max-height:1080px;
+  width: 90%;
+  margin:0px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .profilepic {
-  width: 70%;
+  width: 80%;
   max-width: 600px;
   height: auto;
   position: relative;
