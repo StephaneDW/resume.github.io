@@ -118,16 +118,12 @@ p {
 
 .pg-1 {
   height: 100vh;
-  max-height:1080px;
-  width: 90%;
-  margin:0px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .profilepic {
-  width: 80%;
-  max-width: 600px;
+  width: 70%;
   height: auto;
   position: relative;
   top: 50%;
@@ -176,7 +172,6 @@ p {
 
 .opleiding {
   height: 100vh;
-  max-height:1080px;
   width: 80%;
   margin: 0px auto;
   display: grid;
@@ -233,7 +228,7 @@ p {
   animation: Engels 2s;
 }
 .Duits {
-  width: 40%;
+  width: 50%;
   animation: Duits 2s;
 }
 .Zweeds {
@@ -295,7 +290,7 @@ p {
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 50%;
   }
 }
 @keyframes Zweeds {
@@ -349,13 +344,18 @@ p {
 
 .werkervaring {
   height: 100vh;
-  max-height:1080px;
 }
 
 .werkervaring h1 {
   text-align: center;
   padding-top: 1.4em;
-  margin-bottom: 1.4em;
+}
+
+.klikuitleg {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.4em;
+  color: grey;
 }
 
 .werk-ervaring {
